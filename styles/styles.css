@@ -1,0 +1,100 @@
+/* ====================== RESET & BASE ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f5e8d3;
+    background-color: #1a140f;
+}
+
+/* ====================== HEADER ====================== */
+header {
+    background-color: #1a140f;
+    border-bottom: 1px solid #3d2e1f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /* всё влево */
+    gap: 60px;                     /* расстояние между логотипом и меню */
+}
+
+.logo img {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f5e8d3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #d4a373;
+}
+
+/* ====================== HERO (пустой) ====================== */
+.hero {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 120px 40px;
+    min-height: 700px;
+    background-color: #1a140f;
+}
+
+/* ====================== OTHER SECTIONS ====================== */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 40px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f5e8d3;
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    background-color: #1a140f;
+    color: #8c7455;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* ====================== MOBILE ====================== */
+@media (max-width: 768px) {
+    .header-container {
+        gap: 30px;
+        padding: 15px 20px;
+    }
+    .menu {
+        gap: 25px;
+    }
+    .hero {
+        padding: 80px 20px;
+        min-height: 400px;
+    }
+}
